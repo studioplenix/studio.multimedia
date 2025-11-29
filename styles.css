@@ -1,0 +1,132 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: white;
+  background: black;
+  overflow-x: hidden;
+}
+
+/* Encabezado */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 30px;
+  background: rgba(0, 0, 0, 0.678);
+  z-index: 100;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.menu ul li {
+  border-left: 1px solid white;
+  padding-left: 15px;
+}
+
+.menu ul li:first-child {
+  border-left: none;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.menu ul li a:hover {
+  color: cyan;
+}
+
+.social img {
+  height: 20px;
+  margin-left: 10px;
+  filter: invert(100%);
+}
+
+/* Video de fondo */
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Texto inferior */
+footer {
+  position: fixed;
+  bottom: 10px;
+  left: 20px;
+  color: white;
+  font-size: 12px;
+  background: rgba(0,0,0,0.6);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+/* Sección de Works */
+.works {
+  padding: 100px 50px;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.8), #000);
+  text-align: center;
+}
+
+.works h2 {
+  font-size: 24px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-bottom: 2px solid white;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.works-gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.work-item img {
+  width: 250px;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+.work-item img:hover {
+  transform: scale(1.05);
+}
+html {
+  scroll-behavior: smooth;
+}
+.footer {
+  background: #111;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #aaa;
+}
